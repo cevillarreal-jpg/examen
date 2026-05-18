@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body style="background-color: rgb(231, 250, 231); font-family: Arial, sans-serif;">
+
+    <section id="volverInicio">
+        <a href="../PaginaPrincipal.html" style="text-decoration: none; color: darkgreen; font-weight: bold; margin-top: 20px; display: inline-block;"> Volver al inicio</a>
+    </section>
+
+
+    <section id="formularioRegistro" style="text-align: center;">
+        <h1>Pagina de registro</h1>
+        <form method="get" action="../inicioSesion/PaginaInicioSesion.html">
+            <label for="nombres"><strong>Nombres completos:</strong></label>
+            <br>
+            <input type="text" id="nombres" name="nombres" required placeholder="Tu nombre completo" size="30">
+            <br><br>
+            <label for="apellidos"><strong>Apellidos completos:</strong></label>
+            <br>
+            <input type="text" id="apellidos" name="apellidos" required placeholder="Tus apellidos completos" size="30">
+            <br><br>
+            <label for="cedula"><strong>Cédula:</strong></label>
+            <br>
+            <input type="text" id="cedula" name="cedula" required placeholder="Tu cédula" size="30" maxlength="10">
+            <br><br>
+            
+            <label for="fecha"><strong>Fecha de nacimiento:</strong></label>
+            <br>
+            <input type="date" id="fecha" name="fecha" required placeholder="Tu fecha de nacimiento" size="30">
+            <br><br>
+            <label><strong>Género:</strong></label>
+            <br>
+            <select id="genero" name="genero" required>
+                <option value="">Selecciona una opción</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+            <br><br>
+            
+            <label for="correo"><strong>Correo electrónico:</strong></label>
+            <br>
+            <input type="email" id="correo" name="correo" required placeholder="tu@email.com" size="30">
+            <br><br>
+        
+            <label for="contraseña"><strong>Contraseña:</strong></label>
+            <br>
+            <input type="password" id="contraseña" name="contraseña" required placeholder="Tu contraseña" size="30" min="8" max="16">
+            <br><br>
+            <input type="submit" value="Registrarse">
+        </form>
+    </section>
+
+    <footer></footer>
+        <p>&copy; 2023 FitConnet. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>
